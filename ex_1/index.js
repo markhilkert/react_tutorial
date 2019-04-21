@@ -1,17 +1,11 @@
 import React from "react"
 import ReactDOM from "react-dom"
 
-function MyApp() {
-  return (
-    <ul>
-      <li> Milo </li>
-      <li> Johnny </li>
-      <li> Otis </li>
-    </ul>
-  )
-}
-
 ReactDOM.render(
-  <MyApp />,
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+  </ul>,
   document.getElementById("root")
 )
