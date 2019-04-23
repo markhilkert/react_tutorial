@@ -1,17 +1,23 @@
 import React from 'react';
 import './App.css';
+import './style.css'
+import TodoItem from './components/TodoItem'
+
+/*
+Time to have fun styling! But first things first: 
+
+1. Change the input/p combo below to be a new component called <TodoItem />. <TodoItem /> (for now) will just have the same displayed data below (every todo item is the same) hardcoded inside of it. (We'll learn soon how to make the TodoItem more flexible)
+    
+2. Style up the page however you want! You're welcome to use regular CSS (in the CSS file) or inline styles, or both!
+*/
 
 function App() {
   return (
-    <div>
-      <input type="checkbox" />
-      <p> Take out the trash </p>
-      <input type="checkbox" />
-      <p> Do Coding </p>
-      <input type="checkbox" />
-      <p> Apply to Jobs </p>
-      <input type="checkbox" />
-      <p> Eat Food </p>
+    <div className="todo-list">
+      <TodoItem />
+      <TodoItem />
+      <TodoItem />
+      <TodoItem />
     </div> 
   );
 }
